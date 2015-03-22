@@ -11,10 +11,11 @@
 
 ## Load the plyr package and set working directory: ##
 library(plyr)
-data_dir <- "C:\\RXDATA\\Coursera\\3 - Getting and Cleaning Data\\Course Project\\UCI HAR Dataset"
+#data_dir <- "C:\\RXDATA\\Coursera\\3 - Getting and Cleaning Data\\Course Project\\UCI-HAR-Dataset"
+data_dir <- "path to your local UCI-HAR-Dataset folder"
 setwd(data_dir)
 
-## 1) Read and merge the training and test data sets to create one data set. ##
+## 1) Read and merge the training and the test sets to create one data set. ##
 # create 'x' data set:
 x_ <- rbind( read.table("train\\X_train.txt"),
              read.table("test\\X_test.txt") )
